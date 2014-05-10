@@ -35,6 +35,9 @@ target_link_libraries(sickld ${catkin_LIBRARIES})
 add_executable(sicklms ros/sicklms/sicklms.cpp)
 target_link_libraries(sicklms ${catkin_LIBRARIES})
 
+add_executable(sickpls ros/sickpls/sickpls.cpp)
+target_link_libraries(sickpls ${catkin_LIBRARIES})
+
 add_executable(print_scans standalone/print_scans.cpp)
 target_link_libraries(print_scans ${catkin_LIBRARIES})
 
@@ -59,7 +62,7 @@ target_link_libraries(log_scans ${catkin_LIBRARIES})
 # )
 
 ## Mark executables and/or libraries for installation
-install(TARGETS sickld sicklms print_scans time_scans
+install(TARGETS sickld sicklms sickpls print_scans time_scans
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}

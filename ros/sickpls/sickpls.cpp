@@ -33,7 +33,7 @@
 #include <cstdio>
 #include <math.h>
 #include <limits>
-#include <sickpls/SickPLS.hh>
+#include <sicktoolbox/SickPLS.hh>
 #include "ros/ros.h"
 #include "sensor_msgs/LaserScan.h"
 #include <diagnostic_updater/diagnostic_updater.h> // Publishing over the diagnostics channels.
