@@ -1,0 +1,13 @@
+<launch>
+
+  <node pkg="sicktoolbox_wrapper" type="sickpls" name="sickpls">
+    <param name="port" value="/dev/ttyUSB0" />
+    <param name="baud" value="500000" />
+  </node>
+
+  <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0  map laser 100" />
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find sicktoolbox_wrapper)/ros/pls_demo.rviz"/>
+
+</launch>
+
